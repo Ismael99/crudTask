@@ -53,7 +53,7 @@
   <div class="row align-items-center vh-100">
     <div class="col-8 mx-auto my-auto container-form " >
       <h3 class="mx-auto text-center mt-3 text-white" >Editar Estudiante</h3>
-    <form class="p-4" id="updateStudent" name="updateStudent" method="post" action="<?= site_url('/action-update') ?>">
+    <form class="p-4" id="updateStudent" method="post" action="<?= site_url('/action-update') ?>">
     <input type="hidden" name="id" id="id" value="<?php echo $currentStudent->id; ?>">
       <div class="form-group">
         <label>First name</label>
