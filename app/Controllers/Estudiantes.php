@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\EstudiantesModel;
+use CodeIgniter\Database\Exceptions\DataException;
+use Exception;
 
 class Estudiantes extends BaseController
 {
@@ -62,8 +64,13 @@ class Estudiantes extends BaseController
             "email" => $this -> request->getVar("email"),
         ];*/
         //$estudiantesModel->update($id, $data);
-        $estudiantesModel->save($currentStudent);
+        try{
+            $estudiantesModel->save($currentStudent);
+        }catch(\Throwable $err){
+            
+        };
         return $this->response->redirect(site_url('/'));
+
     }
 
     public function delete($id=null){
