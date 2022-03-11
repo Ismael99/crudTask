@@ -1,0 +1,72 @@
+CRITICAL - 2022-03-11 00:08:42 --> There is no data to update.
+#0 C:\laragon\www\crudTask\system\BaseModel.php(1593): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\crudTask\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\crudTask\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Object(App\Entities\Estudiantes))
+#3 C:\laragon\www\crudTask\system\BaseModel.php(656): CodeIgniter\Model->update('6', Object(App\Entities\Estudiantes))
+#4 C:\laragon\www\crudTask\app\Controllers\Estudiantes.php(65): CodeIgniter\BaseModel->save(Object(App\Entities\Estudiantes))
+#5 C:\laragon\www\crudTask\system\CodeIgniter.php(825): App\Controllers\Estudiantes->actionUpdate()
+#6 C:\laragon\www\crudTask\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiantes))
+#7 C:\laragon\www\crudTask\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\crudTask\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 00:23:26 --> Undefined variable: estudiantes
+#0 C:\laragon\www\crudTask\app\Views\estudiantes\view.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 70, Array)
+#1 C:\laragon\www\crudTask\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\crudTask\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\crudTask\system\Common.php(1089): CodeIgniter\View\View->render('estudiantes/vie...', Array, true)
+#4 C:\laragon\www\crudTask\app\Controllers\Estudiantes.php(35): view('estudiantes/vie...', Array)
+#5 C:\laragon\www\crudTask\system\CodeIgniter.php(825): App\Controllers\Estudiantes->actionCreate()
+#6 C:\laragon\www\crudTask\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiantes))
+#7 C:\laragon\www\crudTask\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\crudTask\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 00:24:03 --> Undefined variable: estudiantes
+#0 C:\laragon\www\crudTask\app\Views\estudiantes\view.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 70, Array)
+#1 C:\laragon\www\crudTask\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\crudTask\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\crudTask\system\Common.php(1089): CodeIgniter\View\View->render('estudiantes/vie...', Array, true)
+#4 C:\laragon\www\crudTask\app\Controllers\Estudiantes.php(35): view('estudiantes/vie...', Array)
+#5 C:\laragon\www\crudTask\system\CodeIgniter.php(825): App\Controllers\Estudiantes->actionCreate()
+#6 C:\laragon\www\crudTask\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiantes))
+#7 C:\laragon\www\crudTask\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\crudTask\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-11 00:24:59 --> Duplicate entry 'U7364673' for key 'codigo'
+CRITICAL - 2022-03-11 00:24:59 --> Duplicate entry 'U7364673' for key 'codigo'
+#0 C:\laragon\www\crudTask\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `es...', 0)
+#1 C:\laragon\www\crudTask\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `es...')
+#2 C:\laragon\www\crudTask\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `es...')
+#3 C:\laragon\www\crudTask\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `es...', Array, false)
+#4 C:\laragon\www\crudTask\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crudTask\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crudTask\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crudTask\app\Controllers\Estudiantes.php(34): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crudTask\system\CodeIgniter.php(825): App\Controllers\Estudiantes->actionCreate()
+#9 C:\laragon\www\crudTask\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiantes))
+#10 C:\laragon\www\crudTask\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\crudTask\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-03-11 00:25:15 --> Undefined variable: estudiantes
+#0 C:\laragon\www\crudTask\app\Views\estudiantes\view.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 70, Array)
+#1 C:\laragon\www\crudTask\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\crudTask\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\crudTask\system\Common.php(1089): CodeIgniter\View\View->render('estudiantes/vie...', Array, true)
+#4 C:\laragon\www\crudTask\app\Controllers\Estudiantes.php(35): view('estudiantes/vie...', Array)
+#5 C:\laragon\www\crudTask\system\CodeIgniter.php(825): App\Controllers\Estudiantes->actionCreate()
+#6 C:\laragon\www\crudTask\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiantes))
+#7 C:\laragon\www\crudTask\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\crudTask\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-11 02:27:23 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2022-03-11 02:27:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 C:\laragon\www\crudTask\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\laragon\www\crudTask\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\laragon\www\crudTask\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#3 C:\laragon\www\crudTask\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#4 C:\laragon\www\crudTask\app\Controllers\Estudiantes.php(14): CodeIgniter\BaseModel->paginate(1)
+#5 C:\laragon\www\crudTask\system\CodeIgniter.php(825): App\Controllers\Estudiantes->index()
+#6 C:\laragon\www\crudTask\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiantes))
+#7 C:\laragon\www\crudTask\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\crudTask\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
